@@ -13,7 +13,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <!-- Swiper css cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <!-- Custome css file link -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -55,10 +59,10 @@
     <!-- search form end-->
 
     <!-- Home saction starts -->
-    <saction class="home" id="home">
-      <div class="home-slider">
-        <div class="wrapper">
-          <div class="slide">
+    <section class="home" id="home">
+      <div class="swiper mySwiper home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
             <div class="content">
               <span>our specal dish</span>
               <h3>spicy noodles</h3>
@@ -66,13 +70,13 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
                 optio?
               </p>
-              <a href="#" class="btn"></a>
+              <a href="#" class="btn">order now</a>
             </div>
             <div class="image">
               <img src="resources/home-img-1.png" alt="home-img" srcset="" />
             </div>
           </div>
-          <div class="slide">
+          <div class="swiper-slide slide">
             <div class="content">
               <span>our specal dish</span>
               <h3>fried chicken</h3>
@@ -80,13 +84,13 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
                 optio?
               </p>
-              <a href="#" class="btn"></a>
+              <a href="#" class="btn">order now</a>
             </div>
             <div class="image">
               <img src="resources/home-img-2.png" alt="home-img" srcset="" />
             </div>
           </div>
-          <div class="slide">
+          <div class="swiper-slide slide">
             <div class="content">
               <span>our specal dish</span>
               <h3>hot pizza</h3>
@@ -94,17 +98,37 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
                 optio?
               </p>
-              <a href="#" class="btn"></a>
+              <a href="#" class="btn">order now</a>
             </div>
             <div class="image">
               <img src="resources/home-img-3.png" alt="home-img" srcset="" />
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </saction>
+    </section>
     <!-- Home saction end -->
 
+    <!-- Swiper JS cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".home-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop: true,
+      });
+    </script>
     <!-- Custom jabaScript file link -->
     <script src="js/script.js"></script>
   </body>
