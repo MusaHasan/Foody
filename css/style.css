@@ -235,6 +235,7 @@ header .icons #manu-bars {
   overflow: hidden;
   text-align: center;
 }
+
 .dishes .box-container .box .fa-heart,
 .dishes .box-container .box .fa-eye {
   position: absolute;
@@ -248,15 +249,107 @@ header .icons #manu-bars {
   color: var(--black);
 }
 .dishes .box-container .box .fa-heart {
-  right: 1.5rem;
+  right: -15rem;
 }
 .dishes .box-container .box .fa-eye {
-  left: 1.5rem;
+  left: -15rem;
 }
 
-/* dishes saction style end */
-/* media queries */
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover {
+  background: var(--green);
+  color: #fff;
+}
+.dishes .box-container .box:hover .fa-heart {
+  right: 1.5rem;
+}
+.dishes .box-container .box:hover .fa-eye {
+  left: 1.5rem;
+}
+.dishes .box-container .box img {
+  height: 17rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+.dishes .box-container .box .start {
+  padding: 1rem 0;
+}
+.dishes .box-container .box .start i {
+  font-size: 1.7rem;
+  color: var(--green);
+}
 
+.dishes .box-container .box span {
+  color: var(--green);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+/* dishes saction style end */
+/* about saction style end */
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+}
+
+.about .row .image img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+  color: var(--black);
+  font-size: 4rem;
+  padding: 0.5rem 0;
+}
+.about .row .content p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  line-height: 2;
+}
+
+.about .row .content .icons-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+}
+
+.about .row .content .icons-container .icons {
+  background: #eee;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 1 17rem;
+  padding: 1.5rem 1rem;
+}
+
+.about .row .content .icons-container .icons i {
+  font-size: 2.5rem;
+  color: var(--green);
+}
+
+.about .row .content .icons-container .icons span {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+/* about saction style end */
+
+/* media queries */
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -311,5 +404,9 @@ header .icons #manu-bars {
 @media (max-width: 991px) {
   html {
     font-size: 50%;
+  }
+  .dishes .box-container .box img {
+    height: auto;
+    width: 100%;
   }
 }
