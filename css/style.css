@@ -57,7 +57,7 @@ section:nth-child(even) {
   letter-spacing: 0.1rem;
 }
 
-/* Header Navbar style start */
+/* Header Navbar style stars */
 
 header {
   position: fixed;
@@ -121,9 +121,9 @@ header .icons #manu-bars {
   display: none;
 }
 
-/* Header Navbar style start */
+/* Header Navbar style stars */
 
-/* Search system style start */
+/* Search system style stars */
 #search-form {
   position: fixed;
   top: -110%;
@@ -181,7 +181,7 @@ header .icons #manu-bars {
 
 /* Search system style end */
 
-/* Home saction style start */
+/* Home saction style stars */
 
 .home .home-slider .slide {
   display: flex;
@@ -226,7 +226,7 @@ header .icons #manu-bars {
   gap: 1.5rem;
 }
 .dishes .box-container .box {
-  padding: 2.5rem;
+  padding: 1rem;
   background: #fff;
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -271,10 +271,15 @@ header .icons #manu-bars {
   margin: 1rem 0;
   width: 100%;
 }
-.dishes .box-container .box .start {
+.dishes .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+.dishes .box-container .box .stars {
   padding: 1rem 0;
 }
-.dishes .box-container .box .start i {
+.dishes .box-container .box .stars i {
   font-size: 1.7rem;
   color: var(--green);
 }
@@ -283,9 +288,10 @@ header .icons #manu-bars {
   color: var(--green);
   font-weight: bolder;
   margin-right: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 /* dishes saction style end */
+
 /* about saction style end */
 .about .row {
   display: flex;
@@ -348,13 +354,13 @@ header .icons #manu-bars {
   color: var(--black);
 }
 /* about saction style end */
-/* menu saction style starts */
+
+/* menu saction style starss */
 .menu .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
-
 .menu .box-container .box {
   background: #fff;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -373,6 +379,7 @@ header .icons #manu-bars {
   height: 100%;
   width: 100%;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 .menu .box-container .box .image .fa-heart {
   position: absolute;
@@ -387,7 +394,54 @@ header .icons #manu-bars {
   border-radius: 50%;
   color: var(--black);
 }
+.menu .box-container .box .image .fa-heart:hover {
+  background-color: var(--green);
+  color: #fff;
+}
+.menu .box-container .box .content {
+  padding: 2rem;
+  padding-top: 0;
+}
+.menu .box-container .box .content .stars {
+  padding-bottom: 1rem;
+}
+.menu .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  color: var(--green);
+}
+.menu .box-container .box .content h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+.menu .box-container .box .content p {
+  color: var(--light-color);
+  font-size: 1.7rem;
+}
+.menu .box-container .box .content .price {
+  color: var(--green);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
 /* menu saction style end */
+
+/* review saction style start */
+.review .slide {
+  padding: 2rem;
+  box-shadow: var(--box-shadow);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  position: relative;
+}
+.review .slide .fa-quote-right {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 6rem;
+  color: #ccc;
+}
+
+/* review saction style end */
 
 /* media queries */
 @media (max-width: 991px) {
