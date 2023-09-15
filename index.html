@@ -629,55 +629,72 @@
         </div>
       </div>
     </section>
-
     <!-- review saction end -->
+    <!-- order saction start -->
+    <section class="order" id="order">
+      <h3 class="sub-heading">order now</h3>
+      <h1 class="heading">free and fast</h1>
+      <form action="">
+        <div class="inputBox">
+          <div class="input">
+            <span>your name</span>
+            <input type="text" placeholder="enter your name" />
+          </div>
+          <div class="input">
+            <span>your number</span>
+            <input type="number" placeholder="enter your number" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>your order</span>
+            <input type="text" placeholder="enter your name" />
+          </div>
+          <div class="input">
+            <span>additional food</span>
+            <input type="number" placeholder="extra with food" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>how much</span>
+            <input type="number" placeholder="how many order" />
+          </div>
+          <div class="input">
+            <span>date and time</span>
+            <input type="datetime-local" />
+          </div>
+        </div>
+        <div class="inputBox">
+          <div class="input">
+            <span>your address</span>
+            <textarea
+              name=""
+              id=""
+              placeholder="enter your address"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="input">
+            <span>your message</span>
+            <textarea
+              name=""
+              id=""
+              placeholder="enter your message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+        <input type="submit" value="order now" class="btn" />
+      </form>
+    </section>
+    <!-- order saction end -->
 
     <!-- Swiper JS cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".home-slider", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 7500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        loop: true,
-      });
-
-      var swiper = new Swiper(".review-slider", {
-        spaceBetween: 20,
-        centeredSlides: true,
-        autoplay: {
-          delay: 7500,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-          1080: {
-            slidesPerView: 3,
-          },
-        },
-      });
-    </script>
     <!-- Custom jabaScript file link -->
     <script src="js/script.js"></script>
   </body>
