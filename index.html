@@ -513,9 +513,10 @@
     <section class="review" id="review">
       <h3 class="sub-heading">customer's review</h3>
       <h1 class="heading">what they say</h1>
-      <div class="review-slider">
-        <div class="weapper">
-          <div class="slide">
+
+      <div class="swiper swiper-container review-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide">
             <i class="fas fa-quote-right"></i>
             <div class="user">
               <img src="https://placehold.co/200x200" alt="user" />
@@ -530,6 +531,100 @@
                 </div>
               </div>
             </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              obcaecati accusamus est ex non odio dolores ad velit nulla, libero
+              quia eligendi, impedit distinctio soluta expedita quasi similique!
+              Eius, facere?
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="https://placehold.co/200x200" alt="user" />
+              <div class="user-info">
+                <h3>johnsdd uesrd</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              obcaecati accusamus est ex non odio dolores ad velit nulla, libero
+              quia eligendi, impedit distinctio soluta expedita quasi similique!
+              Eius,sdfasdff asdfas facere?
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="https://placehold.co/200x200" alt="user" />
+              <div class="user-info">
+                <h3>josdfhn dedfo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              sit amet consectetur adipisicing elit. Laborum obcaecati accusamus
+              est ex non odio dolores ad velit nulla, libero quia eligendi,
+              impedit distinctio soluta expedita quasi similique! Eius, facere?
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="https://placehold.co/200x200" alt="user" />
+              <div class="user-info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              obcaecati accusamus est ex non odio dolores ad velit nulla, libero
+              quia eligendi, impedit distinctio soluta expedita quasi similique!
+              Eius, facere?
+            </p>
+          </div>
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="https://placehold.co/200x200" alt="user" />
+              <div class="user-info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              obcaecati accusamus est ex non odio dolores ad velit nulla, libero
+              quia eligendi, impedit distinctio soluta expedita quasi similique!
+              Eius, facere?
+            </p>
           </div>
         </div>
       </div>
@@ -554,6 +649,33 @@
           clickable: true,
         },
         loop: true,
+      });
+
+      var swiper = new Swiper(".review-slider", {
+        spaceBetween: 20,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1080: {
+            slidesPerView: 3,
+          },
+        },
       });
     </script>
     <!-- Custom jabaScript file link -->
